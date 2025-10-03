@@ -8,6 +8,7 @@
 import Foundation
 
 public enum Feed {
+    // associated type 
     case text(TextFeed)
     case image(ImageFeed)
 }
