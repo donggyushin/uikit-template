@@ -16,6 +16,14 @@ public enum Feed {
             imageFeed.id
         }
     }
+    var saved: Bool {
+        switch self {
+        case .text(let textFeed):
+            textFeed.saved
+        case .image(let imageFeed):
+            imageFeed.saved
+        }
+    }
     // associated type
     case text(TextFeed)
     case image(ImageFeed)

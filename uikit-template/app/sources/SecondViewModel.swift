@@ -1,5 +1,5 @@
 //
-//  ViewModel.swift
+//  SecondViewModel.swift
 //  uikit-template
 //
 //  Created by 신동규 on 10/3/25.
@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-final class ViewModel {
+final class SecondViewModel {
     @Published var feeds: [Feed] = []
     
     let feedRepository: FeedRepository
@@ -21,11 +21,10 @@ final class ViewModel {
     
     @MainActor
     func fetchFeeds() async throws {
-        feeds = try await feedRepository.fetchFeed()
+        feeds = try await feedRepository.fetchSavedFeed()
     }
     
-    @MainActor
-    func save(_ feed: Feed) async throws {
+    @MainActor func unsaveFeed(_ feed: Feed) async throws {
         var feed = feed
         
         switch feed {
@@ -37,8 +36,8 @@ final class ViewModel {
             feed = .image(imageFeed)
         }
         
-        try await feedRepository.updateFeed(feed)
-        
         delegate?.updated(feed)
+        
+        try await feedRepository.updateFeed(feed)
     }
 }

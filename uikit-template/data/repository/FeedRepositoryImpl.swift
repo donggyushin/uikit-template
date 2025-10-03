@@ -48,4 +48,8 @@ public final class FeedRepositoryImpl: FeedRepository {
             feeds[index] = feed 
         }
     }
+    
+    public func fetchSavedFeed() async throws -> [Feed] {
+        feeds.filter({ $0.saved })
+    }
 }
