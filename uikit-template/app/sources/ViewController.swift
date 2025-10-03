@@ -86,6 +86,13 @@ extension ViewController: UITableViewDataSource {
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300 
+        return 300
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let feed = viewModel.feeds[indexPath.row]
+        Task {
+            try await viewModel.save(feed)
+        }
     }
 }
