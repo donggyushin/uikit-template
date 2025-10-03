@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7000C7E52E8FAA48001760D8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7000C7E42E8FAA48001760D8 /* SnapKit */; };
+		7000C7FA2E8FB5B8001760D8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7000C7F92E8FB5B8001760D8 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7000C7FA2E8FB5B8001760D8 /* Kingfisher in Frameworks */,
 				7000C7E52E8FAA48001760D8 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +86,7 @@
 			name = "uikit-template";
 			packageProductDependencies = (
 				7000C7E42E8FAA48001760D8 /* SnapKit */,
+				7000C7F92E8FB5B8001760D8 /* Kingfisher */,
 			);
 			productName = "uikit-template";
 			productReference = 7000C7B52E8FA617001760D8 /* uikit-template.app */;
@@ -115,6 +118,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				7000C7E32E8FAA48001760D8 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				7000C7F82E8FB5B8001760D8 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7000C7B62E8FA617001760D8 /* Products */;
@@ -364,6 +368,14 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		7000C7F82E8FB5B8001760D8 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.5.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -371,6 +383,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7000C7E32E8FAA48001760D8 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		7000C7F92E8FB5B8001760D8 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7000C7F82E8FB5B8001760D8 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
