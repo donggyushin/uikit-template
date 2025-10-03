@@ -14,7 +14,7 @@ final class SecondViewController: UIViewController {
     
     init(viewModel: SecondViewModel) {
         self.viewModel = viewModel
-        super.init()
+        super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder: NSCoder) {

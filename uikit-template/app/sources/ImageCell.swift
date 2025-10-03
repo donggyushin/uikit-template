@@ -28,6 +28,7 @@ final class ImageCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        setupUI()
     }
     
     required init?(coder: NSCoder) {
@@ -50,10 +51,10 @@ final class ImageCell: UITableViewCell {
     
     func configUI(_ feed: ImageFeed) {
         image.kf.setImage(with: feed.url)
-        savedIndicator.isHidden = !feed.saved
-    }
+        savedIndicator.isHidden = !feed.saved    }
     
     override func prepareForReuse() {
+        super.prepareForReuse()
         image.image = nil
     }
 }
