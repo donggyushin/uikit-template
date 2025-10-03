@@ -39,6 +39,8 @@ final class ImageCell: UITableViewCell {
         contentView.addSubview(image)
         contentView.addSubview(savedIndicator)
         
+        contentView.clipsToBounds = true 
+        
         image.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }

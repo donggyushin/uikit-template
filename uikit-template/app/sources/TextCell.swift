@@ -44,9 +44,7 @@ final class TextCell: UITableViewCell {
         }
         
         titleLabel.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
-            make.leading.equalToSuperview().inset(16)
-            make.trailing.equalTo(savedIndicator.snp.leading).inset(8)
+            make.edges.equalToSuperview()
         }
     }
 
