@@ -8,7 +8,15 @@
 import Foundation
 
 public enum Feed {
-    // associated type 
+    var id: String {
+        switch self {
+        case .text(let textFeed):
+            textFeed.id
+        case .image(let imageFeed):
+            imageFeed.id
+        }
+    }
+    // associated type
     case text(TextFeed)
     case image(ImageFeed)
 }
