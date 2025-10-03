@@ -1,18 +1,15 @@
 //
-//  ViewController.swift
+//  SecondViewController.swift
 //  uikit-template
 //
 //  Created by 신동규 on 10/3/25.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController {
-
+final class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
     }
 }
-

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7000C7E52E8FAA48001760D8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7000C7E42E8FAA48001760D8 /* SnapKit */; };
-		7000C7E72E8FAA48001760D8 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 7000C7E62E8FAA48001760D8 /* SnapKit-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +41,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7000C7E52E8FAA48001760D8 /* SnapKit in Frameworks */,
-				7000C7E72E8FAA48001760D8 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +84,6 @@
 			name = "uikit-template";
 			packageProductDependencies = (
 				7000C7E42E8FAA48001760D8 /* SnapKit */,
-				7000C7E62E8FAA48001760D8 /* SnapKit-Dynamic */,
 			);
 			productName = "uikit-template";
 			productReference = 7000C7B52E8FA617001760D8 /* uikit-template.app */;
@@ -374,11 +371,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7000C7E32E8FAA48001760D8 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		7000C7E62E8FAA48001760D8 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7000C7E32E8FAA48001760D8 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
