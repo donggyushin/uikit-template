@@ -16,6 +16,10 @@ final class AppCoordinator {
     }
     
     func start(window: UIWindow) {
+        let tabBarController = UITabBarController()
+        tabBarController.setViewControllers([ViewController(), SecondViewController()], animated: true)
+        navigationController.setViewControllers([tabBarController], animated: true)
+        
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
     }
